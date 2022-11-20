@@ -64,15 +64,18 @@ const Signup = () => {
              //console.log(json.error)
             }
             if (response.ok) {
+
               setName('')
               setEmailornum('')
               setPassword('')
               setOerror(null)
               setEmptyFields([])
-              
+              localStorage.removeItem("orderdetails");
+              dispatch({type: 'CREATE_ORDER', payload: json})
                 return(
-                  navigate('/Login', { replace: true })
+                  navigate('/Dashboard', { replace: true })
                 )
+             
               }
           }else{
             
@@ -81,11 +84,10 @@ const Signup = () => {
             setPassword('')
             setOerror(null)
             setEmptyFields([])
-            localStorage.removeItem("orderdetails");
-            dispatch({type: 'CREATE_ORDER', payload: json})
+            
               return(
-                navigate('/Dashboard', { replace: true })
-              )
+                navigate('/Shop', { replace: true })
+              )           
 
           }
 
