@@ -75,6 +75,19 @@ const Signup = () => {
                   navigate('/Dashboard', { replace: true })
                 )
               }
+          }else{
+            
+            setName('')
+            setEmailornum('')
+            setPassword('')
+            setOerror(null)
+            setEmptyFields([])
+            localStorage.removeItem("orderdetails");
+            dispatch({type: 'CREATE_ORDER', payload: json})
+              return(
+                navigate('/Dashboard', { replace: true })
+              )
+
           }
 
           
