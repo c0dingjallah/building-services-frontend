@@ -69,10 +69,9 @@ const Signup = () => {
               setPassword('')
               setOerror(null)
               setEmptyFields([])
-              localStorage.removeItem("orderdetails");
-              dispatch({type: 'CREATE_ORDER', payload: json})
+              
                 return(
-                  navigate('/Dashboard', { replace: true })
+                  navigate('/Login', { replace: true })
                 )
               }
           }else{
