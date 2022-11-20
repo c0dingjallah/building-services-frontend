@@ -10,7 +10,7 @@ export const useAdminLogin = () => {
     setIsLoading(true)
     setError(null)
 
-    const response = await fetch('/api/user/adminlogin', {
+    const response = await fetch('https://building-services-backend.onrender.com/api/user/adminlogin', {
       method: 'POST',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({ emailornum, password })
