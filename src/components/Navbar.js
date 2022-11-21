@@ -87,8 +87,8 @@ const Navbar = () => {
         <div className="row align-items-center bg-light py-3 px-xl-5 d-none d-lg-flex">
             <div className="col-lg-4">
                 <Link to="" className="text-decoration-none">
-                    <span className="h1 text-uppercase text-primary bg-dark px-2">Kpui</span>
-                    <span className="h1 text-uppercase text-dark bg-primary px-2 ml-n1">Services</span>
+                    <span className="h1 text-uppercase text-primary bg-dark px-2">Clean</span>
+                    <span className="h1 text-uppercase text-dark bg-primary px-2 ml-n1">Me</span>
                 </Link>
             </div>
             <div className="col-lg-4 col-6 text-left">
@@ -120,14 +120,15 @@ const Navbar = () => {
                 <nav className="collapse position-absolute navbar navbar-vertical navbar-light align-items-start p-0 bg-light" id="navbar-vertical" style={{width: 'calc(100% - 30)', zIndex: 999}}>
                     <div className="navbar-nav w-100">
                         <Link to="/Shop" className="nav-item nav-link">Services</Link>
+                        <Link to="/Dashboard" className="nav-item nav-link">Dashboard</Link>
                     </div>
                 </nav>
             </div>
             <div className="col-lg-9">
                 <nav className="navbar navbar-expand-lg bg-dark navbar-dark py-3 py-lg-0 px-0">
                     <Link to="" className="text-decoration-none d-block d-lg-none">
-                        <span className="h1 text-uppercase text-dark bg-light px-2">Kpui</span>
-                        <span className="h1 text-uppercase text-light bg-primary px-2 ml-n1">Services</span>
+                        <span className="h1 text-uppercase text-dark bg-light px-2">Clean</span>
+                        <span className="h1 text-uppercase text-light bg-primary px-2 ml-n1">Me</span>
                     </Link>
                     <button type="button" className="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                         <span className="navbar-toggler-icon"></span>
